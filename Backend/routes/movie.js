@@ -24,7 +24,7 @@ router.post("/:id/reviews",authenticate,checkId,movieReview)
 router.route("/createmovies").post(authenticate,authorizeAdmin,createMovies)
 //router.route("/update-movie/:id").put(authenticate,authorizeAdmin,updateMovies);
 router.delete("/delete-movie/:id",authenticate,authorizeAdmin,deleteMovies);
-router.delete("/delete-comment",authenticate,authorizeAdmin,deleteComment);
+router.post("/delete-comment",authenticate,authorizeAdmin,deleteComment);
 
 
 export default router;

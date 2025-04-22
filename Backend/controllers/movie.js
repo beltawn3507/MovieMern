@@ -158,7 +158,7 @@ const deleteComment = async (req, res) => {
     const { movieid, reviewid } = req.body;
     const movie = await Movie.findById(movieid);
     if (!movie) {
-      return res.status(404).json({ error: "Movie not found" });
+      return res.status(404).json({ movieid,reviewid});
     }
     const reviewIndex = movie.reviews.findIndex(
       (r) => r._id.toString() === reviewid

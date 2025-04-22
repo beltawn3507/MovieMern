@@ -89,7 +89,7 @@ function Login() {
       <p className="text-white mt-4">
         New User ?{" "}
         <Link
-          to={redirect ? `/login?redirect=${redirect}` : "/register"}
+          to={"/register"}
           className="text-teal-400 hover:underline"
         >
           Create New Account
