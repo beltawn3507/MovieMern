@@ -65,15 +65,4 @@ Admins can **input just an IMDb ID**, and the app fetches:
 
 ---
 
-## 📂 Folder Structure (Frontend)
 
-```bash
-/src
-  /pages
-    /Auth       # Login, Register, PrivateRoute
-    /Admin      # AdminRoute, Dashboard, CreateMovie, etc.
-    /Movies     # AllMovies, MovieDetails
-    /user       # Profile
-  /redux        # Store, slices using RTK Query
-  App.jsx
-  index.js
